@@ -6,7 +6,7 @@ In order to use this runner for your project, edit the `codingame.yml` file and 
 
     runner:
       name: codingame/ruby-bundler-runner
-      version:
+      version: 1.0.2
 
 ## Example
 
