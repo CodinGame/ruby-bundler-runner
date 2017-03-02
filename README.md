@@ -1,22 +1,12 @@
-# ruby-rspec-runner
-
-# What it Does
-
-This Ruby2.4 runner This runner works with a Ruby project built with bundler. It will run `bundler exec` for every `rspec` command.
+# ruby-bundler-runner
 
 # How to Use
 
 In order to use this runner for your project, edit the `codingame.yml` file and add the following lines to your project:
 
     runner:
-      name: codingame/ruby-rspec-runner
-      version: 1.0.1
-
-# Compatibility
-
-This builder can be used for any ruby project with a `Gemfile` containing an entry for `rspec`.
-
-Compatible with `ruby-bundler-builder`.
+      name: codingame/ruby-bundler-runner
+      version:
 
 ## Example
 
@@ -47,4 +37,4 @@ end
 
 In the lesson, the unit test can be called using:
 
-`@[Test unittest: bowling]({"stubs":["lib/bowling.rb"], "command":"spec/bowling_spec.rb"})`
+`@[Test unittest: bowling]({"stubs":["lib/bowling.rb"], "command":"bundle exec bin/rspec --format doc -I lib/ spec/bowling_spec.rb"})`
