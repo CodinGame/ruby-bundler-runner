@@ -6,7 +6,7 @@ In order to use this runner for your project, edit the `codingame.yml` file and 
 
     runner:
       name: codingame/ruby-bundler-runner
-      version: 1.0.2
+      version: 1.0.0-2.4
 
 ## Example
 
@@ -33,6 +33,12 @@ RSpec.describe Bowling, "#score" do
 		end
 	end
 end
+```
+
+We include `rspec`, the popular unit testing tool by adding the dependency in a `Gemfile` at the project root as specified in the [official documentation](http://bundler.io/man/gemfile.5.html):
+```ruby
+source 'https://rubygems.org'
+gem 'rspec', '~> 3.0'
 ```
 
 In the lesson, the unit test can be called using:
