@@ -3,11 +3,11 @@
 # How to Use
 
 In order to use this runner for your project, edit the `codingame.yml` file and add the following lines to your project:
-
-    runner:
-      name: codingame/ruby-bundler-runner
-      version: 1.1.0-2.4
-
+```yaml
+runner:
+    name: codingame/ruby-bundler-runner
+    version: 1.1.0-2.4
+```
 ## Example
 
 In this example, the student is asked to write a method to keep score for a bowling game `hit()` (file `lib/bowling.rb`):
