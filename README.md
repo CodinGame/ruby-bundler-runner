@@ -4,9 +4,7 @@
 
 In order to use this runner for your project, edit the `codingame.yml` file and add the following lines to your project:
 ```yaml
-runner:
-    name: codingame/ruby-bundler-runner
-    version: 1.1.0-ruby-2.4
+runner: techio/ruby-bundler-runner:1.1.0-ruby-2.4
 ```
 ## Example
 
